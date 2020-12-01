@@ -31,6 +31,31 @@ class StudentasClass
             this->egz = egz;
             this->rezultatas = vidurkis(nd)*0.4 + 0.6*egz;
         }
+
+        // 1.copy constructor
+        StudentasClass(const StudentasClass &kitas)
+        {
+            this->vardas = kitas.vardas;
+            this->pavarde = kitas.pavarde;
+            this->nd = kitas.nd;
+            this->egz = kitas.egz;
+            this->rezultatas = kitas.rezultatas;
+        }
+        // 2.copy assignment constructor
+        StudentasClass &operator =(const StudentasClass &kitas)
+                {
+                    this->vardas = kitas.vardas;
+                    this->pavarde = kitas.pavarde;
+                    this->nd = kitas.nd;
+                    this->egz = kitas.egz;
+                    this->rezultatas = kitas.rezultatas;
+                    return *this;
+                }
+        // 3. Destructor
+        ~StudentasClass()
+        {
+
+        }
         float getRezultatas() const
         {
             return rezultatas;
