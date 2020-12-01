@@ -1,7 +1,7 @@
 # V1.1
-V1.1 Programos veikimo principas padarytas pagal V1.0 versiją
-V1.1 Pridėtas programos veikimas naudojant "Klases"
-V1.1 Pridėta laiko analizė naudojant skirtingus kompiliatoriaus optimizavimo flag'us
+V1.1 Programos veikimo principas padarytas pagal V1.0 versiją<br>
+V1.1 Pridėtas programos veikimas naudojant "Klases"<br>
+V1.1 Pridėta laiko analizė naudojant skirtingus kompiliatoriaus optimizavimo flag'us<br>
 
 <table>
 <thead>
@@ -42,3 +42,8 @@ V1.1 Pridėta laiko analizė naudojant skirtingus kompiliatoriaus optimizavimo f
   </tr>
 </tbody>
 </table>
+
+<i>Išvada:</i> didžiausią skirtumą duoda kompiliatoriaus flag'ai<br>
+<i>Išvada:</i> Su mažesniais kiekiais tendencingai matosi, kad naudojant Class vietoj struct, daugelį atvejų programa suveikė greičiau<br>
+<i>Išvada:</i> Su didesniais kiekiais to paties negalima pasakyti
+
