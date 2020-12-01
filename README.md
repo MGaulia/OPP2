@@ -46,5 +46,10 @@ V1.1 Pridėta laiko analizė naudojant skirtingus kompiliatoriaus optimizavimo f
 
 <i>Išvada:</i> didžiausią skirtumą duoda kompiliatoriaus flag'ai<br>
 <i>Išvada:</i> Su mažesniais kiekiais tendencingai matosi, kad naudojant Class vietoj struct, daugelį atvejų programa suveikė greičiau<br>
-<i>Išvada:</i> Su didesniais kiekiais to paties negalima pasakyti
+<i>Išvada:</i> Su didesniais kiekiais to paties negalima pasakyti<br>
+# V1.2
+V1.2 Pridėti pakeitimai naudojantis "Rule of Three"<br>
+V1.2 Pridėtas 'copy constructor'<br>
+V1.2 Pridėtas 'copy assignment operator'<br>
+V1.2 Pridėtas destruktorius<br>
 
