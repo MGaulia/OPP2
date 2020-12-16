@@ -53,3 +53,7 @@ V1.2 Pridėtas 'copy constructor'<br>
 V1.2 Pridėtas 'copy assignment operator'<br>
 V1.2 Pridėtas destruktorius<br>
 
+# V1.5
+V1.5 Pridėta bazinė klasė "Žmogus"
+V1.5 Iš žmogaus klasės išvesta klasė "StudentasClass"
+V1.5 "Žmogus" klasė padaryta abstrakti
