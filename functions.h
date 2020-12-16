@@ -14,11 +14,16 @@ struct studentas
 
 double vidurkis(vector<int> nd);
 
-class StudentasClass
+class Zmogus
         {
-            private:
+        protected:
+            Zmogus(){}
             string vardas;
             string pavarde;
+        };
+class StudentasClass : public Zmogus
+        {
+            private:
             vector<int> nd;
             int egz;
             float rezultatas;

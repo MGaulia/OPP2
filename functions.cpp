@@ -102,7 +102,6 @@ void testuoti(int kiek)
     list<studentas> studentai;
     list<StudentasClass> studentaiClass;
     studentai =  generavimas(kiek, studentaiClass);
-
     dalijimas_struct(studentai);
     dalijimas_class(studentaiClass);
     cout<<endl;
