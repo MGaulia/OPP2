@@ -1,9 +1,21 @@
+#include <bits/stdc++.h>
+#include <iostream>
+#include <chrono>
+#ifndef functions_h
+#define functions_h
 #include "functions.h"
-
 using namespace std;
 
 double vidurkis(vector<int> nd)
 {
+    /** vidurkio skaièiavimo funkcija
+     *
+     * Priima sveikø skaièiø vektoriø
+     *
+     * Graþina double tipo vidurká
+     *
+     */
+
     int suma = 0;
     for(int i: nd)
     {
@@ -16,6 +28,14 @@ double vidurkis(vector<int> nd)
 
 list<studentas> generavimas(int kiek, list<StudentasClass> &studentaiClass)
 {
+
+/** Duomenø generavimo funkcija
+ *
+ * Priima kieká kaip sveikà skaièiø ir list tipo sàraðà su reikðmëm studentaiClass, kurá galima redaguoti
+ *
+ * Graþina list sàraðà studentas tipo reikðmiø
+ */
+
     list<studentas> studentai;
     for(int i = 0 ; i < kiek; i++)
     {
@@ -50,6 +70,14 @@ list<studentas> generavimas(int kiek, list<StudentasClass> &studentaiClass)
 
 void dalijimas_struct(list<studentas> studentai)
 {
+    /** Dalija studentas tipo reikðmiø sàraðà á kvailus ir protingus ir iðtiria laikà
+     *
+     *  Priima sàraðà studentai, kur reikðmës studentas tipo
+     *
+     *  Nieko negraþina
+     *
+     */
+
     auto start_time = std::chrono::high_resolution_clock::now();
     int dydis = studentai.size();
     vector<studentas> kvaili;
@@ -74,6 +102,13 @@ void dalijimas_struct(list<studentas> studentai)
 
 void dalijimas_class(list<StudentasClass> studentai)
 {
+     /** Dalija StudentasClass tipo reikðmiø sàraðà á kvailus ir protingus ir iðtiria laikà
+     *
+     *  Priima sàraðà studentai, kur reikðmës StudentasClass tipo
+     *
+     *  Nieko negraþina
+     *
+     */
     auto start_time = std::chrono::high_resolution_clock::now();
 
     int dydis = studentai.size();
@@ -99,6 +134,13 @@ void dalijimas_class(list<StudentasClass> studentai)
 
 void testuoti(int kiek)
 {
+    /** Apjungia duomenø generavimà ir laiko tyrimus á vienà funkcijà
+     *
+     * Priimà sveikà skaièiø kiek, kuris parodo su kiek studentu bus tiriamas laikas
+     * Negraþina nieko
+     *
+     */
+
     list<studentas> studentai;
     list<StudentasClass> studentaiClass;
     studentai =  generavimas(kiek, studentaiClass);
@@ -106,3 +148,4 @@ void testuoti(int kiek)
     dalijimas_class(studentaiClass);
     cout<<endl;
 }
+#endif
