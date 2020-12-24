@@ -57,3 +57,7 @@ V1.2 Pridėtas destruktorius<br>
 V1.5 Pridėta bazinė klasė "Žmogus"<br>
 V1.5 Iš žmogaus klasės išvesta klasė "StudentasClass"<br>
 V1.5 "Žmogus" klasė padaryta abstrakti
+
+# V2.0
+V2.0 Sugeneruota dokumentacija su doxygen įrankiu<br>
+V2.0 Pridėti komentarai funkcijoms
